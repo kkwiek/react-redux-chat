@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.clear:after {
+    content:'';
+    display:block;
+    clear:both;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#chat-app {
+    position: absolute;
+    text-align: right;
+    width: 100%;
+    bottom: 0;
+}
+
+#friends-list {
+    width: 300px;
+    height: 500px;
+    overflow-y: auto;
+    text-align: left;
+    display: inline-block;
+    margin-right: 55px;
+}
+
+#conversations-container {
+    display: inline-block;
+}
+
+#conversations-lists {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+#tray {
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+    vertical-align: bottom;
+}
+
+.conversation {
+    display: inline-block;
+    text-align: left;
+    margin: 0 10px;
+    width: 281px;
+}
+
+.conversation .conversation-head {
+    color: #1a237e;
+    background-color: #64b5f6;
+    padding: 3px 5px;
+}
+
+.conversation .conversation-head .conversation-head-username {
+    width: 200px;
+    float: left;
+    line-height: 26px;
+}
+
+.conversation .conversation-head .conversation-head-options {
+    float: right;
+    width: 50px;
+    text-align: right;
+}
+
+.conversation .conversation-content {
+    border-left: 1px solid rgb(217, 217, 217);
+    border-right: 1px solid rgb(217, 217, 217);
+}
+
+.conversation .conversation-content .conversation-messages-wrapper  {
+    height: 200px;
+    overflow-y: auto;
+    border-bottom: 1px solid rgb(217, 217, 217);
+    padding: 10px;
+    background: #fff;
+}
+
+.conversation .conversation-content .conversation-message-area {
+    background: #fff;
+    width: 100%;
+}
+
+.conversation .conversation-content .conversation-message-area .message-area {
+    height: 50px;
+    width: 267px;
+    resize: none;
+    outline: none;
+    border: 1px solid #fff;
+    padding: 5px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.conversation-message {
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.conversation-message:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.conversation-message .conversation-message-photo {
+    float: left;
+    margin-top: -5px;
+    margin-right: 7px;
+}
+
+.conversation-message .conversation-message-content {
+    background: #5EA1D5;
+    float: left;
+    width: 180px;
+    padding: 12px 5px;
+    border-radius: 3px;
+    color: #fff;
+    position: relative;
+    line-height: 18px;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.conversation-message .conversation-message-content:before {
+     position: absolute;
+     content: "";
+     left: -10px;
+     top: 8px;
+     width: 0;
+     height: 0;
+     border-style: solid;
+     border-width: 5px 10px 5px 0;
+     border-color: transparent #5EA1D5 transparent transparent;
+ }
+
+.conversation-message .conversation-message-date {
+    position: absolute;
+    top: -18px;
+    right: 0;
+    font-size: 10px;
+    color: rgba(125, 122, 122, 1);
+    height: 17px;
+}
+
+.conversation-message.conversation-message-right .conversation-message-photo {
+    float: right;
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.conversation-message.conversation-message-right .conversation-message-content {
+    float: right;
+    background: #D6D6D6;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.conversation-message.conversation-message-right .conversation-message-content:before  {
+    position: absolute;
+    right: -10px;
+    top: 8px;
+    left: auto;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 10px;
+    border-color: transparent transparent transparent #D6D6D6;
+    margin-left: 0;
+}
+
+.conversation-message.conversation-message-right .conversation-message-date  {
+    left: 0;
+    right: auto;
+}
