@@ -4,8 +4,8 @@ import ConversationListContainer from '../containers/ConversationListContainer'
 
 const App = () => (
   <div>
-  	<ConversationListContainer />
-  	<FriendsListContainer />
+    <ConversationListContainer />
+    <FriendsListContainer />
   </div>
 );
 

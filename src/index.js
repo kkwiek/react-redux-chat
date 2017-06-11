@@ -19,8 +19,8 @@ injectTapEventPlugin();
 
 render(
   <Provider store={store}>
-  	<MuiThemeProvider>
-    	<App />
+    <MuiThemeProvider>
+      <App />
     </MuiThemeProvider>
   </Provider>,
   document.getElementById('chat-app')
